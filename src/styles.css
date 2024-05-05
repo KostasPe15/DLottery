@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+  background: linear-gradient(-45deg, #6e3321, #741d3e, #125b75, #147961);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  font: Montserrat;
+  overflow: hidden;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+table, th, td {
+    border: 1px solid;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  
+button {
+        background: #ff2f00;
+        border-radius: 999px;
+        box-shadow: #ff2f00 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 0;
+        margin-top: 5px;
+        margin-left: 10px;
+}
+
+label{
+  color: white;
+  margin-right: 8px;
+}
+
+  h1 {
+    position: relative;
+	  color: #fff;
+	  font: 900 60px Montserrat;
+	  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  } 
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 280px; 
+  }
+
+  .column-3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    margin-top: 100px;
+    height: 200px;
+  }
+
+  .column-2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 70px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
